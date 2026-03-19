@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Características - PocketChampion | Colección de Pokémon de Generaciones 1-9</title>
+    <meta name="description" content="Conoce las características del juego PocketChampion, incluyendo la colección de 1000+ Pokémon de generaciones 1-9, la coexistencia de Terastalización + Mega Evolución, el cambio libre HD/pixelado en 3D y las batallas Terastal de dos jugadores/multijugador">
+    <meta name="keywords" content="PocketChampion, características del juego, colección de Pokémon, Terastalización, Mega Evolución, batalla multijugador">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Barra de Navegación -->
+    <nav class="sticky top-0 z-50 bg-dark bg-opacity-80 backdrop-blur-md text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="images/logo.png" alt="PocketChampion Logo" class="h-10 mr-3">
+                    <span class="text-xl font-bold">PocketChampion</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="font-medium hover:text-accent transition-colors">Inicio</a>
+                    <a href="features.html" class="font-medium hover:text-accent transition-colors">Características</a>
+                    <a href="guides.html" class="font-medium hover:text-accent transition-colors">Guías</a>
+                    <a href="codes.html" class="font-medium hover:text-accent transition-colors">Códigos</a>
+                    <a href="articles.html" class="font-medium hover:text-accent transition-colors">Artículos</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white focus:outline-none">
+                        <i class="fa fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Menú Móvil -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 font-medium hover:text-accent transition-colors">Inicio</a>
+                <a href="features.html" class="block py-2 font-medium hover:text-accent transition-colors">Características</a>
+                <a href="guides.html" class="block py-2 font-medium hover:text-accent transition-colors">Guías</a>
+                <a href="codes.html" class="block py-2 font-medium hover:text-accent transition-colors">Códigos</a>
+                <a href="articles.html" class="block py-2 font-medium hover:text-accent transition-colors">Artículos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section class="relative h-64 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/Spanish/1.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-dark/70 to-dark/90"></div>
+        <div class="relative z-10 text-center text-white max-w-4xl px-4">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Características del Juego</h1>
+            <p class="text-lg md:text-xl">Explora el gameplay único y el contenido emocionante de PocketChampion</p>
+        </div>
+    </section>
+
+    <!-- Detalles de Características -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- Característica 1 -->
+            <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
+                <div class="w-full md:w-1/2">
+                    <img src="images/Spanish/2.jpg" alt="Colección de Pokémon de Generaciones 1-9" class="rounded-2xl shadow-lg w-full" loading="lazy">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-4">Colección de 1000+ Pokémon de Generaciones 1-9</h2>
+                    <p class="text-gray-600 mb-6">PocketChampion incluye todos los Pokémon de la 1ª a la 9ª generación, ¡más de 1000 en total! Puedes elegir cualquier starter de cualquier generación como tu compañero inicial y comenzar tu viaje de aventura. Ya sean los clásicos Charmander, Bulbasaur, Squirtle, o los más recientes Sprigatito, Fuecoco, Quaxly, todos pueden encontrarse en el juego.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>Elige entre los starters de las generaciones 1-9</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>Colecciona más de 1000 Pokémon</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>Completa cadenas de evolución y cambios de forma</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Característica 2 -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8 mb-16">
+                <div class="w-full md:w-1/2">
+                    <img src="images/Spanish/3.jpg" alt="Terastalización + Mega Evolución" class="rounded-2xl shadow-lg w-full" loading="lazy">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-4">Terastalización + Mega Evolución</h2>
+                    <p class="text-gray-600 mb-6">PocketChampion combina innovadoramente los sistemas de Terastalización y Mega Evolución, haciendo las estrategias de batalla más ricas y diversificadas. Puedes elegir el método de evolución adecuado según la situación de la batalla y crear tu propio estilo de combate único.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>Sistema de Terastalización, cambia los atributos de los Pokémon</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>Mega Evolución, mejora las habilidades de los Pokémon</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>Combinación estratégica, crea tu estilo de batalla único</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Característica 3 -->
+            <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
+                <div class="w-full md:w-1/2">
+                    <img src="images/Spanish/4.jpg" alt="Cambio Libre HD/Pixelado en 3D" class="rounded-2xl shadow-lg w-full" loading="lazy">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-4">Cambio Libre HD/Pixelado en 3D</h2>
+                    <p class="text-gray-600 mb-6">PocketChampion admite el cambio libre entre dos estilos visuales: gráficos HD en 3D y estilo pixelado, permitiéndote elegir libremente entre efectos visuales modernos y el estilo clásico nostálgico. Al mismo tiempo, la perspectiva de batalla también puede ajustarse libremente, proporcionando una nueva experiencia de juego.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>Gráficos HD en 3D, exquisitos y detallados</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>Estilo pixelado, clásico nostálgico</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>Ajuste libre de perspectiva de batalla</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Característica 4 -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                <div class="w-full md:w-1/2">
+                    <img src="images/Spanish/5.jpg" alt="Batallas Terastal de Dos Jugadores/Multijugador" class="rounded-2xl shadow-lg w-full" loading="lazy">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-4">Batallas Terastal de Dos Jugadores/Multijugador</h2>
+                    <p class="text-gray-600 mb-6">PocketChampion ofrece diversas modalidades de batalla, incluyendo batallas tradicionales de dos jugadores e innovadoras batallas Terastal multijugador. Puedes formar equipos con amigos, desafiar oponentes poderosos y experimentar la diversión del trabajo en equipo.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>Batallas tradicionales de dos jugadores</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>Batallas Terastal multijugador</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>Cooperación en equipo, coordinación estratégica</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Descarga -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">¡Comienza tu Aventura Ahora!</h2>
+            <p class="text-xl mb-8">Únete a PocketChampion y experimenta estas emocionantes características</p>
+            <a href="https://game.6266game.cn/website/zdbjl/?w7cdSjjj" class="bg-white text-primary font-bold py-4 px-10 rounded-xl border-2 border-white btn-hover inline-block">
+                <i class="fa fa-download mr-2"></i>Descargar Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">PocketChampion</h3>
+                    <p class="text-gray-400">Un juego de batalla de rol con más de 1000 Pokémon de las generaciones 1-9</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white transition-colors">Características</a></li>
+                        <li><a href="guides.html" class="text-gray-400 hover:text-white transition-colors">Guías</a></li>
+                        <li><a href="codes.html" class="text-gray-400 hover:text-white transition-colors">Códigos</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white transition-colors">Artículos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contáctanos</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fa fa-envelope mr-2"></i> <span class="text-gray-400">support@pocketchampion.com</span></li>
+                        <li class="flex items-center"><i class="fa fa-phone mr-2"></i> <span class="text-gray-400">+86 123 4567 8910</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 PocketChampion. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle del Menú Móvil
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
