@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicación del Sistema Teracristal - Guías de PocketChampion</title>
+    <meta name="description" content="Explicación del sistema Teracristal de PocketChampion, presenta en detalle los principios, efectos y técnicas de uso del Teracristal para darte ventaja en combate">
+    <meta name="keywords" content="PocketChampion, Teracristal, sistema de combate, guías del juego, técnicas de combate">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans', sans-serif;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- 导航栏 -->
+    <nav class="sticky top-0 z-50 bg-dark bg-opacity-80 backdrop-blur-md text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="../images/logo.png" alt="PocketChampion Logo" class="h-10 mr-3">
+                    <span class="text-xl font-bold">PocketChampion</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="font-medium hover:text-accent transition-colors">Inicio</a>
+                    <a href="../features.html" class="font-medium hover:text-accent transition-colors">Características</a>
+                    <a href="../guides.html" class="font-medium hover:text-accent transition-colors">Guías</a>
+                    <a href="../codes.html" class="font-medium hover:text-accent transition-colors">Códigos</a>
+                    <a href="../articles.html" class="font-medium hover:text-accent transition-colors">Artículos</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white focus:outline-none">
+                        <i class="fa fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- 移动端菜单 -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <a href="../index.html" class="block py-2 font-medium hover:text-accent transition-colors">Inicio</a>
+                <a href="../features.html" class="block py-2 font-medium hover:text-accent transition-colors">Características</a>
+                <a href="../guides.html" class="block py-2 font-medium hover:text-accent transition-colors">Guías</a>
+                <a href="../codes.html" class="block py-2 font-medium hover:text-accent transition-colors">Códigos</a>
+                <a href="../articles.html" class="block py-2 font-medium hover:text-accent transition-colors">Artículos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section class="relative h-64 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../images/Spanish/4.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-dark/70 to-dark/90"></div>
+        <div class="relative z-10 text-center text-white max-w-4xl px-4">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Explicación del Sistema Teracristal</h1>
+            <p class="text-lg md:text-xl">5 de marzo de 2026</p>
+        </div>
+    </section>
+
+    <!-- 文章内容 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="prose max-w-none">
+                <p class="text-gray-600 mb-6">El Teracristal es un importante mecanismo de combate en «PocketChampion» que puede cambiar el tipo de la criatura y potenciar movimientos específicos. Este artículo explicará en detalle los principios, efectos y técnicas de uso del Teracristal para ayudarte a aprovechar al máximo esta poderosa mecánica.</p>
+                
+                <h2 class="text-2xl font-bold mb-4">¿Qué es el Teracristal?</h2>
+                
+                <p class="text-gray-600 mb-6">El Teracristal es un fenómeno que ocurre en la región de Paldea, donde las criaturas pueden cristalizarse y cambiar su tipo. Cada criatura tiene un tipo Teracristal único que puede activarse durante la batalla para cambiar su tipo y potenciar movimientos de ese tipo.</p>
+                
+                <h2 class="text-2xl font-bold mb-4">Cómo Activar el Teracristal</h2>
+                
+                <ul class="list-disc pl-6 space-y-2 mb-6">
+                    <li class="text-gray-600">Cada criatura puede activar el Teracristal una vez por batalla</li>
+                    <li class="text-gray-600">El Teracristal dura 3 turnos después de activarse</li>
+                    <li class="text-gray-600">El tipo Teracristal puede ser diferente al tipo original de la criatura</li>
+                    <li class="text-gray-600">Los movimientos del tipo Teracristal reciben un aumento de potencia del 50%</li>
+                </ul>
+                
+                <h2 class="text-2xl font-bold mb-4">Estrategias de Teracristal</h2>
+                
+                <div class="bg-light rounded-2xl p-6 mb-6">
+                    <h3 class="text-xl font-bold mb-2">Teracristal Ofensivo</h3>
+                    <p class="text-gray-600 mb-4">Usa el Teracristal para cambiar el tipo de tu criatura a uno que tenga ventaja sobre el oponente, y usa movimientos de ese tipo para infligir daño máximo.</p>
+                </div>
+                
+                <div class="bg-light rounded-2xl p-6 mb-6">
+                    <h3 class="text-xl font-bold mb-2">Teracristal Defensivo</h3>
+                    <p class="text-gray-600 mb-4">Usa el Teracristal para cambiar el tipo de tu criatura a uno que tenga resistencia contra los movimientos del oponente, reduciendo el daño recibido.</p>
+                </div>
+                
+                <div class="bg-light rounded-2xl p-6 mb-6">
+                    <h3 class="text-xl font-bold mb-2">Teracristal de Cobertura</h3>
+                    <p class="text-gray-600 mb-4">Usa el Teracristal para cubrir las debilidades de tu criatura, cambiando a un tipo que resista los movimientos que normalmente le harían mucho daño.</p>
+                </div>
+                
+                <h2 class="text-2xl font-bold mb-4">Consejos Avanzados</h2>
+                
+                <ul class="list-disc pl-6 space-y-2 mb-6">
+                    <li class="text-gray-600">Aprende el tipo Teracristal de cada criatura para planificar estrategias</li>
+                    <li class="text-gray-600">Combina el Teracristal con Mega Evolución para un poder devastador</li>
+                    <li class="text-gray-600">Usa el Teracristal en el momento adecuado para maximizar su efecto</li>
+                    <li class="text-gray-600">Considera las ventajas y desventajas de tipo antes de activar el Teracristal</li>
+                </ul>
+                
+                <p class="text-gray-600 mb-6">El Teracristal es una mecánica poderosa que puede cambiar el rumbo de cualquier batalla. ¡Domina el Teracristal y conviértete en un maestro del combate!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 相关文章 -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Artículos Relacionados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover">
+                    <img src="../images/Spanish/2.jpg" alt="PocketChampion Anuncio de Lanzamiento Público" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Anuncio de Lanzamiento Público</h3>
+                        <p class="text-gray-600 mb-4">«PocketChampion» se lanzará oficialmente al público el 20 de marzo de 2026.</p>
+                        <a href="article1.html" class="text-primary font-medium hover:underline">Leer más</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover">
+                    <img src="../images/Spanish/3.jpg" alt="PocketChampion Guía de Selección de Criatura Inicial" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Guía de Selección de Criatura Inicial</h3>
+                        <p class="text-gray-600 mb-4">Presenta en detalle las características, ventajas y desventajas de cada trío inicial.</p>
+                        <a href="article2.html" class="text-primary font-medium hover:underline">Leer más</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover">
+                    <img src="../images/Spanish/5.jpg" alt="PocketChampion Guía de Batalla Multijugador Teracristal" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Guía de Batalla Multijugador Teracristal</h3>
+                        <p class="text-gray-600 mb-4">Presenta las reglas, técnicas y mejores combinaciones de equipos para la batalla multijugador Teracristal.</p>
+                        <a href="article4.html" class="text-primary font-medium hover:underline">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 下载区域 -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Comienza Tu Aventura Ahora</h2>
+            <p class="text-xl mb-8">Domina el Teracristal y conviértete en un maestro del combate</p>
+            <a href="https://game.6266game.cn/website/zdbjl/?w7cdSjjj" class="bg-white text-primary font-bold py-4 px-10 rounded-xl border-2 border-white btn-hover inline-block">
+                <i class="fa fa-download mr-2"></i>Descargar Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">PocketChampion</h3>
+                    <p class="text-gray-400">Un juego de rol de batalla con más de 1000 criaturas de las generaciones 1-9</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-400 hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="../features.html" class="text-gray-400 hover:text-white transition-colors">Características</a></li>
+                        <li><a href="../guides.html" class="text-gray-400 hover:text-white transition-colors">Guías</a></li>
+                        <li><a href="../codes.html" class="text-gray-400 hover:text-white transition-colors">Códigos</a></li>
+                        <li><a href="../articles.html" class="text-gray-400 hover:text-white transition-colors">Artículos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contáctanos</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fa fa-envelope mr-2"></i> <span class="text-gray-400">support@pocketchampion.com</span></li>
+                        <li class="flex items-center"><i class="fa fa-phone mr-2"></i> <span class="text-gray-400">+86 123 4567 8910</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa fa-weibo"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa fa-wechat"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-xl"><i class="fa fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 PocketChampion. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单切换
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
